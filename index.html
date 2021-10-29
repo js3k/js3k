@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head><title>Source Viewer</title>
+<link rel="stylesheet" href="style.css">
+<script src="jquery.js"></script></head><body>
+
+
+<textarea id="content"></textarea>
+<input id="url" type="text" value="https://js3k.github.io/index.html">
+
+
+
+<script>
+$( "input" ).keyup(function(){var value = $( this ).val();
+$.get(value,function(data){$("#content").text(data);});
+}).keyup();
+
+
+
+
+</script></body></html>
+
