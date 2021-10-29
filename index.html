@@ -15,7 +15,7 @@
 <script>
 $( "input" ).keyup(function(){var value = $( this ).val();
 $.get(value,function(data){$("#content").text(data);});
-$("i").text("This Source Code From <br/> Url: "+value);
+$("i").text("Source From: "+value);
 }).keyup();
 
 
