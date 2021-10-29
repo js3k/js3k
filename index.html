@@ -15,7 +15,7 @@
 <script>
 $( "input" ).keyup(function(){var value = $( this ).val();
 $.get(value,function(data){$("#content").text(data);});
-$("i").text("Html Code From:",value);
+$("i").text("Html Code From:"+value);
 }).keyup();
 
 
